@@ -1,8 +1,8 @@
 import pandas as pd
-
-def load_data(C:\Users\addep\Downloads\archive.zip):
+file_path = "creditcard.csv"
+def load_data(file_path):
     try:
-        data = pd.read_csv(C:\Users\addep\Downloads\archive.zip)
+        data = pd.read_csv(file_path)
         print("Dataset loaded successfully!")
         print("Shape:", data.shape)
         return data

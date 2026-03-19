@@ -16,7 +16,7 @@ def train_models(X_train, y_train):
     models['Decision Tree'] = dt
 
     # Random Forest
-    rf = RandomForestClassifier()
+    rf = RandomForestClassifier(n_estimators=50, random_state=42, n_jobs=1)
     rf.fit(X_train, y_train)
     models['Random Forest'] = rf
 
